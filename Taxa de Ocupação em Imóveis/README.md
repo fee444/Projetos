@@ -16,10 +16,6 @@
 - [🧭 Fases do projeto](#-fases-do-projeto)
 - [🧠 Decisões tomadas](#-decisões-tomadas)
 - [📈 Evolução dos modelos](#-evolução-dos-modelos)
-- [🏆 Resultados finais](#-resultados-finais)
-- [⚠️ Limitações](#️-limitações)
-- [🚀 Próximos passos](#-próximos-passos)
-- [🛠️ Como executar](#️-como-executar)
 
 ---
 
@@ -168,66 +164,6 @@ Como os dados estão **padronizados** e a variável alvo está em **escala logar
 - F-statistic = **208,3** (p ≈ 7e-128), então o modelo é globalmente significativo.
 - 4 das 5 suposições foram plenamente satisfeitas.
 
----
 
-## ⚠️ Limitações
 
-- ❌ **Normalidade dos resíduos não foi satisfeita** (Shapiro-Wilk), embora o QQ-Plot mostre um desvio pequeno. Isso pode afetar a precisão de intervalos de confiança e valores-p.
-- 🧪 Os dados de **teste foram preparados**, mas o modelo **ainda não foi avaliado neles**. Os resultados acima são de treino.
-- 🔗 Correlação não é causalidade. O modelo mostra **associações**, não relações de causa e efeito.
-- 📦 Amostra com apenas 500 bairros.
 
----
-
-## 🚀 Próximos passos
-
-- [ ] 🧪 Avaliar o modelo final no **conjunto de teste** (R², RMSE, MAE).
-- [ ] 🔁 Aplicar **validação cruzada**.
-- [ ] 🧹 Tratar outliers e testar novamente a normalidade dos resíduos.
-- [ ] 🔄 Testar outras transformações e **regressão robusta** ou **mínimos quadrados ponderados**.
-- [ ] 🌳 Comparar com modelos de Machine Learning (Random Forest, Gradient Boosting).
-- [ ] 🔎 Investigar o sinal de `taxa_professores`.
-
----
-
-## 🛠️ Como executar
-
-**1. Clone o repositório**
-```bash
-git clone https://github.com/<seu-usuario>/<nome-do-repositorio>.git
-cd <nome-do-repositorio>
-```
-
-**2. Instale as dependências**
-```bash
-pip install numpy pandas matplotlib seaborn scipy statsmodels scikit-learn jupyter
-```
-
-**3. Coloque o arquivo `dataset.csv` na mesma pasta do notebook** 📂
-
-**4. Abra o notebook**
-```bash
-jupyter notebook projeto.ipynb
-```
-
----
-
-## 🧰 Tecnologias
-
-| Biblioteca | Uso |
-|---|---|
-| `pandas` / `numpy` | Manipulação de dados |
-| `matplotlib` / `seaborn` | Visualização |
-| `scipy` | Correlação de Pearson, Shapiro-Wilk, QQ-Plot |
-| `statsmodels` | Regressão OLS, VIF, Rainbow, Durbin-Watson, Goldfeld-Quandt |
-| `scikit-learn` | Divisão treino/teste e padronização |
-
----
-
-## 👤 Autor
-
-Feito com 💜 por **<seu-nome>**
-
-🔗 [LinkedIn](https://linkedin.com/in/<seu-usuario>) • 🐙 [GitHub](https://github.com/<seu-usuario>)
-
-⭐ Se este projeto te ajudou, deixe uma estrela no repositório!
